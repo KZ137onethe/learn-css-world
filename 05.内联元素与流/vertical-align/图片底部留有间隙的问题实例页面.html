@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>图片底部留有间隙的问题实例页面</title>
+  <style>
+    .box{
+      width: 280px;
+      outline: 1px solid #aaa;
+      text-align: center;
+    }
+
+    .box img{
+      height: 96px;
+    }
+
+    .box-1 img{
+      display: block;
+      margin: auto;
+    }
+
+    .box-2{
+      line-height: 0;
+    }
+
+    .box-3{
+      font-size: 0;
+    }
+
+    .box-4 img{
+      vertical-align: bottom;
+    }
+  </style>
+</head>
+<body>
+  <h4>间隙示意：</h4>
+  <div class="box">
+    <img width="200" src="../../images/beauty.png">
+  </div>
+  <h4>图片block块状清除间隙：</h4>
+  <div class="box box-1">
+    <img width="200" src="../../images/beauty.png">
+  </div>
+  <h4>容器font-size:0清除间隙：</h4>
+  <div class="box box-2">
+    <img width="200" src="../../images/beauty.png">
+  </div>
+  <h4>图片vertial-align设置清除：</h4>
+  <div class="box box-3">
+    <img width="200" src="../../images/beauty.png">
+  </div>
+  <h4>  图片vertial-align设置清除：</h4>
+  <div class="box box-4">
+    <img width="200" src="../../images/beauty.png">
+  </div>
+
+</body>
+</html>

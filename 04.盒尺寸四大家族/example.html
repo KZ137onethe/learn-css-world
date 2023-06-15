@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>example</title>
+  <style>
+    h3{
+      line-height: 30px;
+      font-size: 14px;
+    }
+
+    h3 > span{
+      padding-top: 50px;
+    }
+
+    .father{
+      width: 300px;
+      height: 300px;
+      box-sizing: border-box;
+      background-color: brown;
+    }
+
+    .father > .son{
+      box-sizing: border-box;
+      height: 100%;
+      padding: 25%;
+    }
+  </style>
+</head>
+<body>
+  <h3><span class="hash">标题</span></h3>
+
+  <div class="father">
+    <div class="son">
+      ccc
+    </div>
+  </div>
+</body>
+</html>

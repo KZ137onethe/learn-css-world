@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>利用块级元素的特性配合清除浮动</title>
+  <style>
+    .box{
+      padding: 10px;
+      background-color: #cd0000;
+    }
+
+    .box > img{
+      float: left;
+      width: 20%;
+      height: 20%;
+    }
+
+    .clear::after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    span.title{
+      color: skyblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="box clear">
+    <img src="../images/th.jpg" alt="">
+  </div>
+  <div class="box clear">
+    <img src="../images/th.jpg" alt="">
+  </div>
+  <span class="title">Hello World!</span>
+</body>
+</html>

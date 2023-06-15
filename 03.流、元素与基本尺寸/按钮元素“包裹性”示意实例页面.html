@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>按钮元素“包裹性”示意实例页面</title>
+  <style>
+    .box{
+      width: 240px;
+      margin: 20px auto;
+    }
+
+    .Box{
+      padding: 10px;
+      background-color: #cd0000;
+      text-align: center;
+    }
+
+    .content{
+      display: inline-block;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <button>按钮</button>
+  </div>
+  <div class="box">
+    <button>文字再多一点</button>
+  </div>
+  <div class="box">
+    <button>按钮文字越多宽度越宽（包裹，内部尺寸特性），但不会超过容器宽度（自适应性）</button>
+  </div>
+
+  <div class="Box">
+    <p id="conMore" class="content">文字内容</p>
+  </div>
+  <p><button id="btnMore">更多文字</button></p>
+</body>
+<script>
+  let btn = document.getElementById('btnMore'), content = document.getElementById('conMore');
+
+  if(btn && content){
+    btn.addEventListener('click', () => {
+      content.innerHTML += "-新增文字"
+    })
+  }
+</script>
+</html>

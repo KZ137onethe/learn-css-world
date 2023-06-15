@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>不同行高属性值不同的继承表现实例页面</title>
+  <style>
+    .box{
+      font-size: 14px;
+    }
+
+    .box1{
+      line-height: 1.5;
+    }
+
+    .box2{
+      line-height: 150%;
+    }
+
+    .box3{
+      line-height: 1.5em;
+    }
+
+    h3, p{
+      margin: 0;
+    }
+
+    h3{ font-size: 32px; }
+    p { font-size: 20px; }
+  </style>
+</head>
+<body>
+  <div class="box box1">
+    <h3>标题</h3>
+    <p>内容</p>
+  </div>
+  <div class="box box2">
+    <h3>标题</h3>
+    <p>内容</p>
+  </div>
+  <div class="box box3">
+    <h3>标题</h3>
+    <p>内容</p>
+  </div>
+</body>
+</html>
